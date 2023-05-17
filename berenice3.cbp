@@ -31,9 +31,33 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="atualizar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="atualizar.h" />
+		<Unit filename="cadastrar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cadastrar.h" />
+		<Unit filename="excluir.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="excluir.h" />
+		<Unit filename="ler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ler.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="salvar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="salvar.h" />
+		<Unit filename="vendas.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vendas.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
