@@ -1,0 +1,131 @@
+# depslib dependency file v1.0
+1684363196 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\atualizar.c
+
+1684362810 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\cadastrar.c
+
+1684362838 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\excluir.c
+
+1684362918 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\ler.c
+
+1684363142 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\salvar.c
+
+1684362878 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\vendas.c
+
+1684365584 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1684455102 source:d:\projeto__berenice__parte3\berenice3\berenice3\00main.c
+	<stdio.h>
+	<stdlib.h>
+	"01menu.h"
+
+1684455056 source:d:\projeto__berenice__parte3\berenice3\berenice3\02produtos.c
+	<stdio.h>
+	<stdlib.h>
+
+1684449874 source:d:\projeto__berenice__parte3\berenice3\berenice3\03exibir.c
+
+1684362810 source:d:\projeto__berenice__parte3\berenice3\berenice3\04cadastrar.c
+
+1684363196 source:d:\projeto__berenice__parte3\berenice3\berenice3\05atualizar.c
+
+1684362838 source:d:\projeto__berenice__parte3\berenice3\berenice3\06excluir.c
+
+1684363142 source:d:\projeto__berenice__parte3\berenice3\berenice3\07salvar.c
+
+1684362918 source:d:\projeto__berenice__parte3\berenice3\berenice3\08ler.c
+
+1684362878 source:d:\projeto__berenice__parte3\berenice3\berenice3\09vendas.c
+
+1684449940 source:d:\projeto__berenice__parte3\berenice3\berenice3\10sair.c
+
+1684454122 source:d:\projeto__berenice__parte3\berenice3\berenice3\01menu.c
+	<stdio.h>
+	<stdlib.h>
+
+1684455100 d:\projeto__berenice__parte3\berenice3\berenice3\01menu.h
+
+1684536434 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\berenice3\00main.c
+	<stdio.h>
+	<stdlib.h>
+	"01menu.h"
+
+1684609528 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\berenice3\01menu.c
+	<stdio.h>
+	<stdlib.h>
+	"02produtos.h"
+
+1684535554 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\berenice3\02produtos.c
+	<stdio.h>
+	<stdlib.h>
+
+1684449874 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\berenice3\03exibir.c
+
+1684362810 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\berenice3\04cadastrar.c
+
+1684363196 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\berenice3\05atualizar.c
+
+1684362838 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\berenice3\06excluir.c
+
+1684363142 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\berenice3\07salvar.c
+
+1684362918 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\berenice3\08ler.c
+
+1684362878 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\berenice3\09vendas.c
+
+1684449940 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\berenice3\10sair.c
+
+1684535388 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\berenice3\01menu.h
+
+1684609782 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\berenice3\02produtos.h
+
+1684536434 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\00main.c
+	<stdio.h>
+	<stdlib.h>
+	"01menu.h"
+
+1684535388 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\01menu.h
+
+1684610336 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\01menu.c
+	<stdio.h>
+	<stdlib.h>
+	"02produtos.h"
+
+1684609782 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\02produtos.h
+
+1684622400 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\02produtos.c
+	<stdio.h>
+	<stdlib.h>
+	"04cadastrar.h"
+
+1684618316 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\03exibir.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"03exibir.h"
+	"04cadastrar.h"
+
+1684622480 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\04cadastrar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"04cadastrar.h"
+
+1684363196 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\05atualizar.c
+
+1684362838 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\06excluir.c
+
+1684363142 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\07salvar.c
+
+1684362918 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\08ler.c
+
+1684362878 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\09vendas.c
+
+1684449940 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\10sair.c
+
+1684622264 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\04cadastrar.h
+
+1684617016 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\03exibir.h
+	"04cadastrar.h"
+

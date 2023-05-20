@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="berenice3" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/berenice3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/berenice3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="00main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="01menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="01menu.h" />
+		<Unit filename="02produtos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="02produtos.h" />
+		<Unit filename="03exibir.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="03exibir.h" />
+		<Unit filename="04cadastrar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="04cadastrar.h" />
+		<Unit filename="05atualizar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="05atualizar.h" />
+		<Unit filename="06excluir.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="06excluir.h" />
+		<Unit filename="07salvar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="07salvar.h" />
+		<Unit filename="08ler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="08ler.h" />
+		<Unit filename="09vendas.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="09vendas.h" />
+		<Unit filename="10sair.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="10sair.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
