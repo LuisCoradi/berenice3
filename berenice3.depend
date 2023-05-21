@@ -94,25 +94,30 @@
 
 1684609782 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\02produtos.h
 
-1684622400 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\02produtos.c
+1684641558 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\02produtos.c
 	<stdio.h>
 	<stdlib.h>
 	"04cadastrar.h"
 
-1684618316 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\03exibir.c
+1684636984 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\03exibir.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"03exibir.h"
 	"04cadastrar.h"
 
-1684622480 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\04cadastrar.c
+1684639516 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\04cadastrar.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"04cadastrar.h"
 
-1684363196 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\05atualizar.c
+1684641520 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\05atualizar.c
+	<stdlib.h>
+	<stdio.h>
+	"03exibir.h"
+	"04cadastrar.h"
+	"05atualizar.h"
 
 1684362838 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\06excluir.c
 
@@ -124,8 +129,10 @@
 
 1684449940 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\10sair.c
 
-1684622264 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\04cadastrar.h
+1684637206 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\04cadastrar.h
 
 1684617016 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\03exibir.h
 	"04cadastrar.h"
+
+1684639804 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\05atualizar.h
 

@@ -9,7 +9,7 @@ typedef struct
     int quantidade;
 } Produto;
 
-void cadastrarProduto(Produto **vetor_produtos, int *tam, int quantidade);
+void cadastrarProduto(Produto **vetor_produtos, int *tam, int quant);
 void salvarProdutos(Produto *vetor_produtos, int tam);
 void carregarProdutos(Produto **vetor_produtos, int *tam);
 

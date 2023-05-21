@@ -87,6 +87,9 @@ void cadastrarProduto(Produto **vetor_produtos, int *tam, int quantidade)
         // Adicionar o novo produto ao final do vetor
         (*vetor_produtos)[(*tam) - 1] = novo_produto;
 
+        // Salvar os produtos no arquivo
+        salvarProdutos(*vetor_produtos, *tam);
+
         printf("Produto cadastrado com sucesso!\n");
     }
 }
