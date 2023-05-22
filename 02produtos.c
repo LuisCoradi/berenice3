@@ -1,74 +1,55 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "02produtos.h"
+#include "tipos.h"
 
-#include "04cadastrar.h"
-
-void submenu_produtos()
+// Funcao Bool de Verificacao de Codigo Item - Retorno
+// False = 0
+// true = 1
+bool verificaCodigo(int ptr_cod, int tam, Produto *vetor_produto)
 {
-    int opc, tam = 0, quant, atualizar_prod;
-    Produto *vetor_produtos = NULL;
 
-    do
+    bool resultado = false; // Inicia o loop bool com o Resultado = False
+
+    for(int i=0; i<tam; i++)
     {
-        printf("Sub-Menu Produtos\n");
-        printf("[1] Exibir\n");
-        printf("[2] Cadastrar\n");
-        printf("[3] Atualizar\n");
-        printf("[4] Excluir\n");
-        printf("[5] Salvar\n");
-        printf("[6] Ler\n");
-        printf("[7] Voltar\n");
-        printf("Escolha uma opcao:\n>  ");
-        scanf("%d", &opc);
-        getchar();
-        system("cls||clear");
-
-        switch(opc)
+        if(ptr_cod == vetor_produto[i].codigoItem)  // Esta checando se naquele determinado ponto do vetor que o codigoitem esta verificando se existe no codigo
         {
-        case 1:
-            printf("Selecionado: Exibir\n");
-            carregarProdutos(&vetor_produtos, &tam);
-            imprimirTabelaProdutos(vetor_produtos, tam);
-            system("pause");
-            system("cls||clear");
-            break;
-        case 2:
-            printf("Selecionado: Cadastrar\n");
-            printf("Quantos produtos deseja cadastrar?\n");
-            scanf("%d", &quant);
-            cadastrarProduto(&vetor_produtos, &tam, quant);
-            system("cls||clear");
-            break;
-        case 3:
-            printf("Selecionado: Atualizar\n");
-            atualizar_produtos(atualizar_prod);
-            system("cls||clear");
-            break;
-        case 4:
-            printf("Selecionado: Excluir\n");
-            system("cls||clear");
-            break;
-        case 5:
-            printf("Selecionado: Salvar\n");
-            system("pause");
-            system("cls||clear");
-            break;
-        case 6:
-            printf("Selecionado: Ler\n");
-            system("cls||clear");
-            break;
-        case 7:
-            printf("Selecionado: Voltar\n");
-            system("cls||clear");
-            break;
-        default:
-            printf("Opcao invalida!\n Tente novamente.\n");
-            system("pause");
-            system("cls||clear");
+            resultado = true; // Apos fazer o LOOP BOOL corretamente o [resultado] passa a ser TRUE, entao a funcao funcionou com sucesso
             break;
         }
     }
-    while(opc < 0 || opc > 8);
+    return resultado;   // Retorna a funcao BOOL que o resultado passou a ser verdadeiro, entao a funcao finalizou com exito
+}
 
-    free(vetor_produtos); // Liberar a memória do vetor de produtos
+void salvarVendas(Produto **vetor_produtos, int *tam){  // Funcao para Salvar os Itens Vendidos em um Arquivo com Nome [ Ano, Mes, dia, hora, minuto e segundo ]
+    time_t t = time(NULL);      // e um tipo de variavel da biblioteca "time.h" que define o horario, e data do ano
+    struct tm *current_time = localtime(&t);    // struct de [tm] que aponta para valor de current_time = localtime(endereco de t)
+
+    char filename[50];  // crio um variavel tipo char [filename] com tamanho 50
+    sprintf(filename, "%04d-%02d-%02d_%02d-%02d-%02d.txt",      // printo a string para guardar no nome do arquivo na seguinte ordem [ Ano, Mes, dia, hora, minuto, segundo ]
+            current_time->tm_year + 1900,   // Ano
+            current_time->tm_mon + 1,   // Mes
+            current_time->tm_mday,     // Dia
+            current_time->tm_hour,  // Hora
+            current_time->tm_min,   // Minuto
+            current_time->tm_sec);  // Segundo
+
+    FILE *salvarvenda_ = fopen(filename, "w");
+    if (salvarvenda_ == NULL) {
+        printf("Não foi possível criar o arquivo.\n");
+        return 1;
+    }
+        fprintf(salvarvenda_, "%d\n", *tam);
+    for (int i = 0; i < *tam; i++)
+    {
+        fprintf(salvarvenda_, "%d\n", (*vetor_produtos)[i].codigoItem);
+        fprintf(salvarvenda_, "%s\n", (*vetor_produtos)[i].nome);
+        fprintf(salvarvenda_, "%.2f\n", (*vetor_produtos)[i].valor);
+        fprintf(salvarvenda_, "%d\n", (*vetor_produtos)[i].quantidade);
+        fprintf(salvarvenda_, "%d\n", (*vetor_produtos)[i].quant_vendida);
+
+    }
+    fclose(salvarvenda_);
+    printf("Arquivo [%s\n] criado com sucesso:", filename);
+
+    return 0;
 }

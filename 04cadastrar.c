@@ -1,95 +1,58 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "02produtos.h"
+#include "tipos.h"
 
-#include "04cadastrar.h"
 
-void salvarProdutos(Produto *vetor_produtos, int tam)
+void cadastrarProduto(Produto **vetor_produtos, int *tam)
 {
-    FILE *arquivo = fopen("produtos.txt", "a");
-    if (arquivo == NULL)
-    {
-        printf("Erro ao abrir o arquivo de produtos.\n");
+    int quant, cod;
+    printf("Quantos produtos deseja cadastrar?\n");
+    scanf("%d", &quant);
+
+    while(quant<0 || quant == 0){
+        printf("Opcao Invalida, tente novamente: ");
+        scanf("%d", &quant);
+        setbuf(stdin, NULL);
+    }
+    Produto *novo_produto = realloc(*vetor_produtos, (*tam+quant) * sizeof(Produto)); // Realoca memoria para o vetor de produtos
+    if(novo_produto == NULL){
+        printf("Erro ao alocar a memoria");
+        free(novo_produto);
         return;
     }
 
-    for (int i = 0; i < tam; i++)
+    *vetor_produtos = novo_produto;
+
+    int aux = *tam;
+    *tam = aux + quant;
+     // loop pra cadastrar os produtos
+    for (int i = aux; i < *tam; i++)
     {
-        fprintf(arquivo, "%i\n", vetor_produtos[i].codigoItem);
-        fprintf(arquivo, "%s\n", vetor_produtos[i].nome);
-        fprintf(arquivo, "%.2f\n", vetor_produtos[i].valor);
-        fprintf(arquivo, "%d\n", vetor_produtos[i].quantidade);
-    }
-
-    fclose(arquivo);
-}
-
-void carregarProdutos(Produto **vetor_produtos, int *tam)
-{
-    FILE *arquivo = fopen("produtos.txt", "r");
-    if (arquivo == NULL)
-    {
-        printf("Arquivo de produtos não encontrado.\n");
-        return;
-    }
-
-    // Limpar o vetor de produtos atual
-    free(*vetor_produtos);
-    *vetor_produtos = NULL;
-    *tam = 0;
-
-    char linha[100];
-    while (fgets(linha, sizeof(linha), arquivo) != NULL)
-    {
-        Produto novo_produto;
-        sscanf(linha, "%i", &novo_produto.codigoItem);
-        fgets(linha, sizeof(linha), arquivo);
-        strcpy(novo_produto.nome, linha);
-        novo_produto.nome[strcspn(novo_produto.nome, "\n")] = '\0';
-        fgets(linha, sizeof(linha), arquivo);
-        sscanf(linha, "%f", &novo_produto.valor);
-        fgets(linha, sizeof(linha), arquivo);
-        sscanf(linha, "%d", &novo_produto.quantidade);
-
-
-        (*tam)++;
-        *vetor_produtos = realloc(*vetor_produtos, (*tam) * sizeof(Produto));
-        (*vetor_produtos)[(*tam) - 1] = novo_produto;
-    }
-
-    fclose(arquivo);
-}
-
-
-void cadastrarProduto(Produto **vetor_produtos, int *tam, int quantidade)
-{
-    for (int i = 0; i < quantidade; i++)
-    {
-        // Incrementar o tamanho do vetor
-        (*tam)++;
-
-        // Realocar memória para o novo tamanho do vetor
-        *vetor_produtos = realloc(*vetor_produtos, (*tam) * sizeof(Produto));
-
-        // Preencher os dados do novo produto
-        Produto novo_produto;
         printf("Digite o codigo do produto: ");
-        scanf("%d", &novo_produto.codigoItem);
+        scanf("%d", &cod);
         getchar();
+        //Verifica se o codigo ja existe
+        while(verificaCodigo(cod, *tam, *vetor_produtos) == true){
+            printf("\nCodigo Invalido, Tente Novamente\n");
+            scanf("%d", &cod);
+            getchar();
+
+        }
+        (*vetor_produtos)[i].codigoItem = cod;
+        // Atribui cod a codigoItem
+
+
         printf("Digite o nome do produto: ");
-        fgets(novo_produto.nome, sizeof(novo_produto.nome), stdin);
-        novo_produto.nome[strcspn(novo_produto.nome, "\n")] = '\0';  // Remover a quebra de linha do final
+        fgets((*vetor_produtos)[i].nome, sizeof((*vetor_produtos)[i].nome), stdin);
+        (*vetor_produtos)[i].nome[strcspn((*vetor_produtos)[i].nome, "\n")] = '\0';
         printf("Digite o preco do produto: ");
-        scanf("%f", &novo_produto.valor);
+        scanf("%f", &((*vetor_produtos)[i].valor));
         printf("Digite a quantidade do produto: ");
-        scanf("%d", &novo_produto.quantidade);
+        scanf("%d", &((*vetor_produtos)[i].quantidade));
+        // Esses printfs são usados para cadastrar
 
-        // Adicionar o novo produto ao final do vetor
-        (*vetor_produtos)[(*tam) - 1] = novo_produto;
 
-        // Salvar os produtos no arquivo
-        salvarProdutos(*vetor_produtos, *tam);
-
+        (*vetor_produtos)[i].quant_vendida = 0;
+        //Ao cadastrar um produto sua quantia vendida é inicializada nula/0 mesma coisa.
         printf("Produto cadastrado com sucesso!\n");
     }
 }

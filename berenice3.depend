@@ -80,59 +80,74 @@
 
 1684609782 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\berenice3\02produtos.h
 
-1684536434 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\00main.c
-	<stdio.h>
-	<stdlib.h>
-	"01menu.h"
-
-1684535388 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\01menu.h
-
-1684610336 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\01menu.c
-	<stdio.h>
-	<stdlib.h>
+1684754034 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\00main.c
 	"02produtos.h"
+	"09vendas.h"
 
-1684609782 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\02produtos.h
+1684697248 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\01menu.h
 
-1684641558 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\02produtos.c
+1684756718 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\01menu.c
+	"02produtos.h"
+	"tipos.h"
+
+1684750812 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\02produtos.h
 	<stdio.h>
 	<stdlib.h>
-	"04cadastrar.h"
-
-1684636984 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\03exibir.c
-	<stdio.h>
-	<stdlib.h>
+	<stdbool.h>
+	<stdint.h>
+	<inttypes.h>
 	<string.h>
-	"03exibir.h"
-	"04cadastrar.h"
+	<time.h>
+	"tipos.h"
 
-1684639516 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\04cadastrar.c
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-	"04cadastrar.h"
+1684756726 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\02produtos.c
+	"02produtos.h"
+	"tipos.h"
 
-1684641520 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\05atualizar.c
-	<stdlib.h>
-	<stdio.h>
-	"03exibir.h"
-	"04cadastrar.h"
-	"05atualizar.h"
+1684709604 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\03exibir.c
+	"02produtos.h"
+	"tipos.h"
 
-1684362838 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\06excluir.c
+1684762834 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\04cadastrar.c
+	"02produtos.h"
+	"tipos.h"
 
-1684363142 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\07salvar.c
+1684756744 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\05atualizar.c
+	"02produtos.h"
+	"tipos.h"
 
-1684362918 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\08ler.c
+1684756534 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\06excluir.c
+	"02produtos.h"
+	"tipos.h"
 
-1684362878 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\09vendas.c
+1684756534 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\07salvar.c
+	"02produtos.h"
+	"tipos.h"
+
+1684763542 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\08ler.c
+	"02produtos.h"
+	"tipos.h"
+
+1684756774 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\09vendas.c
+	"02produtos.h"
+	"tipos.h"
+	"09vendas.h"
 
 1684449940 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\10sair.c
 
-1684637206 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\04cadastrar.h
+1684697866 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\04cadastrar.h
 
-1684617016 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\03exibir.h
-	"04cadastrar.h"
+1684697894 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\03exibir.h
 
-1684639804 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\05atualizar.h
+1684697932 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\05atualizar.h
+
+1684719258 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\tipos.h
+	"02produtos.h"
+
+1684747616 d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\09vendas.h
+
+1684748088 source:d:\materia c\primeiro semestre\terceiro mes\berenice\berenice3\menuvendas.c
+	"02produtos.h"
+	"tipos.h"
+	"09vendas.h"
 

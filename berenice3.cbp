@@ -37,7 +37,6 @@
 		<Unit filename="01menu.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="01menu.h" />
 		<Unit filename="02produtos.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -45,35 +44,29 @@
 		<Unit filename="03exibir.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="03exibir.h" />
 		<Unit filename="04cadastrar.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="04cadastrar.h" />
 		<Unit filename="05atualizar.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="05atualizar.h" />
 		<Unit filename="06excluir.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="06excluir.h" />
 		<Unit filename="07salvar.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="07salvar.h" />
 		<Unit filename="08ler.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="08ler.h" />
 		<Unit filename="09vendas.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="09vendas.h" />
-		<Unit filename="10sair.c">
+		<Unit filename="menuvendas.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="10sair.h" />
+		<Unit filename="tipos.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
